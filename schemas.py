@@ -25,7 +25,7 @@ class User(BaseModel):
 class UserSignUp(BaseModel):
     """Modelo de entrada del endpoint /signup. Validamos que la contraseña sea correcta"""
     name: str = Field(...)
-    age: Optional[int] = Field(None)
+    age: Optional[int] = Field(None, ge=0, description=" Tu edad debe ser mayor a 0" )
     email: EmailStr = Field(...)
     password: str = Field(...,min_length=8, description="La contraseña debe tener al menos 8 caracteres alfanuméricos. ")
 
