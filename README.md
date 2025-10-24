@@ -25,6 +25,7 @@ El caso de uso central es proporcionar una capa de datos (**backend**) para una 
 | **Autenticación** | `/auth/login` | Inicio de sesión y obtención de un token de acceso (**Bearer Token**). |
 | **Perfil** | `/user/account (GET)` | Consulta los datos del perfil del usuario autenticado. |
 | **Perfil** | `/user/account (PUT)` | Permite modificar el nombre y la edad del usuario. |
+| **Perfil** | `/user/account (DELETE)` | Permite eliminar la cuenta del nombre y todos sus datos asociados. |
 | **Logs Diarios** | `/user/logs (POST)` | Registra un nuevo log diario para una fecha específica (**201 Created**). |
 | **Logs Diarios** | `/user/logs (PUT)` | Actualiza un log existente para una fecha específica. |
 | **Métricas** | `/user/trends (GET)` | Calcula y devuelve métricas agregadas (media, mínimo, máximo) de los hábitos para un período definido (`last_days`). |
