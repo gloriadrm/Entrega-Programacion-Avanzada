@@ -69,3 +69,17 @@ La aplicación utiliza el módulo **logging** de Python para registrar el flujo 
 - **Autorización:** el acceso requiere un token JWT (**JSON Web Token**) válido, generado tras el inicio de sesión  
 
 ---
+
+### SWAGGER
+- **Descripción**
+<img width="1159" height="460" alt="image" src="https://github.com/user-attachments/assets/af5e8ec9-d201-4f0c-9f10-bcbd4240c4aa" />
+- **Endpoints**
+<img width="1147" height="429" alt="image" src="https://github.com/user-attachments/assets/0ab3192f-9c9e-41a3-afb8-62bffac216f2" />
+- **Ejemplos de respuesta:**
+ <img width="975" height="767" alt="image" src="https://github.com/user-attachments/assets/897d0424-ffb8-4165-876a-32ce390d49f6" />
+
+  
+
+
+
+---
