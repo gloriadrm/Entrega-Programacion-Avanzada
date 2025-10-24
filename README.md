@@ -45,6 +45,23 @@ La API permite el seguimiento de los siguientes hábitos, fundamentales para el 
 
 ---
 
+## 🚀 Estructura del Proyecto
+
+Este proyecto sigue una **arquitectura modular** para la API REST, organizando los componentes principales en archivos separados para mejorar la claridad y el mantenimiento.
+
+---
+
+| Archivo | Rol y Descripción |
+|----------|------------------|
+| **main.py** | 🧠 **Núcleo de la aplicación (ejecutable).** Contiene la instancia de FastAPI, la configuración de logging, la lógica de endpoints principales (`/auth`, `/user`) y las funciones de utilidad como `get_current_user`. Este es el archivo que se ejecuta. |
+| **models.py** | 🧩 **Modelos de la base de datos (SQLAlchemy).** Define las tablas y relaciones (schemas de la base de datos) para SQLAlchemy, como `UserDB` y `DailyLogDB`. |
+| **schemas.py** | 📦 **Esquemas de datos (Pydantic).** Define las estructuras de datos de entrada y salida (modelos Pydantic) utilizados para validar las peticiones (`UserSignUp`, `DailyLogInput`) y formatear las respuestas (`UserOut`). |
+| **database.py** | 🗄️ **Configuración de la base de datos.** Contiene la configuración de la conexión (motor `engine`), la creación de sesiones (`SessionLocal`) y la clase base declarativa (`Base`) para los modelos ORM. |
+| **security.py** | 🔒 **Lógica de seguridad.** Contiene las funciones para el *hashing* de contraseñas (`hash_password`), la verificación (`verify_password`), y la gestión de tokens JWT (`create_access_token`, `decode_access_token`). |
+| **requirements.txt** | ⚙️ **Dependencias.** Lista todas las bibliotecas de Python necesarias para que el proyecto se ejecute (`FastAPI`, `Uvicorn`, `SQLAlchemy`, etc.). |
+
+---
+
 ## 🛠️ Detalles de Implementación Técnica (FastAPI)
 
 ### 1️⃣ Documentación Explícita
