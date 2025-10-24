@@ -1,0 +1,12 @@
+
+
+# Carpetas
+__pycache__/
+logs/
+
+# Archivos específicos
+.env
+
+# baSE DE DATOS
+*.db 
+
